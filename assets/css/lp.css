@@ -95,6 +95,10 @@
 .type-card p{font-size:13px;font-weight:500;line-height:1.7;opacity:.85;}
 .types__more{text-align:center;margin-top:28px;font-size:16px;font-weight:900;color:var(--navy);}
 .types__more em{color:var(--acc1);}
+/* 総合LPから細分化LPへの導線 */
+.type-card__link{margin-top:12px;}
+.type-card__link a{font-size:13px;font-weight:900;color:var(--acc1);text-decoration:underline;text-underline-offset:3px;}
+.type-card__link a:hover{opacity:.75;}
 
 /* --- 注意書き（免責） --- */
 .lp-note{max-width:820px;margin:0 auto;padding:0 22px 60px;}
