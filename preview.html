@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- STAGING-PAGE: 社内確認用の全ページ一覧。本番公開時にこのファイルを削除する -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!-- STAGING-NOINDEX --><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全ページ一覧（社内確認用）｜空き家買取サイト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#1F3A7A; --blue:#0061B3; --orange:#D77035; --bg:#eef2f6; --line:#d5dee9; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; padding:0; background:var(--bg); color:var(--navy);
+        font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif; font-weight:700; line-height:1.7; }
+  .wrap{ max-width:880px; margin:0 auto; padding:40px 20px 80px; }
+  .head{ background:linear-gradient(120deg,#0061B3,#0089D0); color:#fff; border-radius:14px; padding:28px 26px; margin-bottom:14px; }
+  .head h1{ margin:0 0 6px; font-size:26px; font-weight:900; letter-spacing:.02em; }
+  .head p{ margin:0; font-size:14px; opacity:.95; font-weight:500; }
+  .warn{ background:#fff; border-left:5px solid var(--orange); border-radius:8px;
+         padding:14px 18px; margin-bottom:30px; font-size:13.5px; font-weight:500; }
+  .warn b{ color:var(--orange); }
+  h2{ font-size:15px; font-weight:900; letter-spacing:.08em; color:var(--blue);
+      margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line); }
+  h2 span{ display:block; font-size:11px; color:#8fa3bd; letter-spacing:.14em; font-weight:700; }
+  ul{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+  li a{ display:block; background:#fff; border:1px solid var(--line); border-radius:10px;
+        padding:15px 18px; text-decoration:none; color:var(--navy); transition:.18s; }
+  li a:hover{ border-color:var(--blue); box-shadow:0 4px 16px rgba(31,58,122,.12); transform:translateY(-1px); }
+  li a strong{ display:block; font-size:16px; font-weight:900; }
+  li a em{ display:block; font-style:normal; font-size:12.5px; color:#6b7f99; font-weight:500; margin-top:3px; }
+  li a code{ font-size:11.5px; color:#9fb0c6; font-family:ui-monospace,monospace; font-weight:500; }
+  .tag{ display:inline-block; font-size:10.5px; font-weight:900; letter-spacing:.06em;
+        padding:2px 8px; border-radius:99px; margin-left:8px; vertical-align:2px; }
+  .tag--ad{ background:#fdeee4; color:var(--orange); }
+  .tag--seo{ background:#e6f0fb; color:var(--blue); }
+  .foot{ margin-top:44px; padding-top:18px; border-top:1px solid var(--line);
+         font-size:12px; color:#8194ad; font-weight:500; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <h1>全ページ一覧</h1>
+    <p>空き家買取サイト／社内確認用インデックス</p>
+  </div>
+
+  <div class="warn">
+    <b>※ 本番前のテスト版です。</b>会社名・住所・電話番号・免許番号は仮の値、お客様の声と買取事例は架空です。検索エンジンには表示されない設定（noindex）にしていますが、<b>URLの共有は社内に限定してください。</b>
+  </div>
+
+  <h2>本体サイト<span>MAIN</span></h2>
+  <ul>
+    <li><a href="index.html"><strong>トップページ（買取LP本体）</strong><em>ヒーロー／実績スタッツ／選ばれる理由／買取の流れ／お客様の声／会社情報／査定フォーム</em><code>index.html</code></a></li>
+  </ul>
+
+  <h2>広告用ランディングページ<span>AD LP</span></h2>
+  <ul>
+    <li><a href="souzoku.html"><strong>相続空き家LP<span class="tag tag--ad">広告専用</span></strong><em>3,000万円特別控除訴求。ビフォーアフター図＋3年期限タイムライン＋対象者チェックリスト</em><code>souzoku.html</code></a></li>
+    <li><a href="wakeari.html"><strong>訳あり物件LP<span class="tag tag--ad">広告専用</span></strong><em>事故物件・再建築不可・共有持分訴求。物件種別グリッド＋買取vs仲介比較表</em><code>wakeari.html</code></a></li>
+  </ul>
+
+  <h2>コンテンツ（SEO用）<span>CONTENTS</span></h2>
+  <ul>
+    <li><a href="column.html"><strong>お役立ちコラム 一覧<span class="tag tag--seo">SEO</span></strong><em>記事6本のカード一覧</em><code>column.html</code></a></li>
+    <li><a href="case.html"><strong>買取事例<span class="tag tag--seo">SEO</span></strong><em>種別×エリア別の事例6件（※イメージ）</em><code>case.html</code></a></li>
+  </ul>
+
+  <h2>コラム記事<span>ARTICLES</span></h2>
+  <ul>
+    <li><a href="column-3000man.html"><strong>相続した空き家の3,000万円特別控除とは？</strong><em>要件と期限をやさしく解説 → 相続LPへ誘導</em><code>column-3000man.html</code></a></li>
+    <li><a href="column-tax6bai.html"><strong>空き家を放置すると固定資産税が6倍に？</strong><em>管理不全空家・特定空家を解説 → トップの査定へ誘導</em><code>column-tax6bai.html</code></a></li>
+    <li><a href="column-saikenchiku.html"><strong>再建築不可物件は売れる？</strong><em>売却方法と買取のポイント → 訳ありLPへ誘導</em><code>column-saikenchiku.html</code></a></li>
+    <li><a href="column-jikkajimai.html"><strong>実家じまいの進め方</strong><em>片付け・名義変更・売却までの手順</em><code>column-jikkajimai.html</code></a></li>
+    <li><a href="column-kyoyu.html"><strong>共有持分だけ売却できる？</strong><em>兄弟の共有名義で揉めないために</em><code>column-kyoyu.html</code></a></li>
+    <li><a href="column-kaitai.html"><strong>空き家の解体費用はいくら？</strong><em>解体すべきか売却すべきかの判断軸</em><code>column-kaitai.html</code></a></li>
+  </ul>
+
+  <p class="foot">
+    各ページのフッター最下部にも「▶ 全ページ一覧」のリンクを入れてあるので、どのページからでもここへ戻れます。<br>
+    このページとフッターのリンクは本番公開時に削除します（削除手順は 公開前チェックリスト.md に記載）。
+  </p>
+
+</div>
+</body>
+</html>
