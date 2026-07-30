@@ -101,7 +101,7 @@
 .type-card__link a:hover{opacity:.75;}
 
 /* --- 注意書き（免責） --- */
-.lp-note{max-width:820px;margin:0 auto;padding:0 22px 60px;}
+.lp-note{max-width:820px;margin:0 auto;padding:56px 22px 60px;}
 .lp-note p{font-size:12px;font-weight:500;line-height:1.9;color:var(--navy);opacity:.6;
   background:var(--gray-bg);border-radius:10px;padding:18px 20px;}
 
@@ -121,6 +121,7 @@
   .lp-hero__title{font-size:25px;line-height:1.5;}
   .lp-hero__sub{font-size:15px;}
   .scheme,.checklist,.types{padding:56px 16px;}
+  .lp-note{padding:36px 16px 44px;}
   .scheme__figure{gap:10px;padding:18px;}
   .scheme__fig-col .val{font-size:22px;}
   .scheme__arrow{font-size:22px;}
