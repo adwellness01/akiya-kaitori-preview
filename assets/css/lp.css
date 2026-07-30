@@ -1,0 +1,124 @@
+/* =========================================================
+   LP 専用スタイル（souzoku.html / wakeari.html 共通）
+   style.css の後に読み込む。変数(--navy等)は style.css の :root を利用
+   ========================================================= */
+
+/* --- 簡易ヘッダー（広告LP：ナビを削って離脱を防ぐ） --- */
+.lp-header{position:fixed;top:0;left:0;width:100%;height:70px;z-index:1000;
+  background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--gray-line);}
+.lp-header__inner{max-width:1200px;height:100%;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.lp-header__cta{display:flex;align-items:center;gap:18px;}
+.lp-header__tel{text-align:right;line-height:1.2;}
+.lp-header__tel small{display:block;font-size:11px;font-weight:700;color:var(--navy);opacity:.7;}
+.lp-header__tel b{font-size:22px;font-weight:900;color:var(--navy);letter-spacing:.02em;}
+.lp-header__btn{background:linear-gradient(100deg,var(--acc1),var(--acc2));color:#fff;font-size:15px;font-weight:900;
+  padding:12px 22px;border-radius:999px;box-shadow:0 6px 16px rgba(183,49,87,.3);transition:transform .2s;white-space:nowrap;}
+.lp-header__btn:hover{transform:translateY(-2px);}
+
+/* --- 上部の緊急/訴求バー --- */
+.lp-ribbon{margin-top:70px;background:linear-gradient(100deg,var(--acc1),var(--acc2));color:#fff;text-align:center;
+  font-size:15px;font-weight:900;padding:11px 16px;letter-spacing:.03em;}
+.lp-ribbon b{background:#fff;color:var(--acc1);border-radius:4px;padding:1px 8px;margin:0 4px;}
+
+/* --- LPヒーロー --- */
+.lp-hero{background:linear-gradient(135deg,var(--navy) 0%,#20458c 60%,#0061B3 100%);color:#fff;
+  padding:56px 22px 64px;position:relative;overflow:hidden;}
+.lp-hero__inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;}
+.lp-hero__eyebrow{display:inline-block;font-size:15px;font-weight:900;background:rgba(255,255,255,.16);
+  border:1.5px solid rgba(255,255,255,.5);border-radius:999px;padding:7px 18px;margin-bottom:20px;}
+.lp-hero__title{font-size:40px;font-weight:900;line-height:1.42;letter-spacing:.02em;}
+.lp-hero__title mark{background:none;color:#ffe14d;}
+.lp-hero__title .u{background:linear-gradient(transparent 60%,rgba(255,225,77,.35) 60%);color:#fff;padding:0 2px;}
+.lp-hero__sub{margin-top:22px;font-size:17px;font-weight:500;line-height:1.85;opacity:.96;}
+.lp-hero__badges{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+.lp-hero__badges li{font-size:13px;font-weight:900;background:rgba(255,255,255,.14);border-radius:999px;padding:8px 16px;}
+.lp-hero__badges li::before{content:"✓ ";color:#ffe14d;}
+
+/* ヒーロー内フォームカード */
+.lp-hero__card{background:#fff;color:var(--navy);border-radius:18px;padding:26px 24px 22px;box-shadow:0 24px 60px rgba(0,0,0,.3);}
+.lp-hero__card h2{font-size:20px;font-weight:900;text-align:center;margin-bottom:6px;}
+.lp-hero__card .lp-hero__card-note{font-size:12px;font-weight:700;text-align:center;color:var(--acc1);margin-bottom:18px;}
+.lp-cta-btn{display:block;width:100%;text-align:center;background:linear-gradient(100deg,var(--acc1),var(--acc2));
+  color:#fff;font-size:19px;font-weight:900;padding:18px;border-radius:12px;border:none;cursor:pointer;
+  box-shadow:0 10px 24px rgba(183,49,87,.34);transition:transform .2s;font-family:var(--font);}
+.lp-cta-btn:hover{transform:translateY(-2px);}
+.lp-cta-btn small{display:block;font-size:12px;font-weight:700;opacity:.95;margin-top:4px;}
+
+/* --- 制度説明ボックス（B1 相続控除） --- */
+.scheme{padding:88px 22px;}
+.scheme__inner{max-width:920px;margin:0 auto;}
+.scheme__box{background:var(--gray-bg);border-radius:20px;padding:40px 38px;border:2px solid var(--blue-lt1);}
+.scheme__lead{font-size:17px;font-weight:700;line-height:1.9;margin-bottom:22px;}
+.scheme__lead em{color:var(--acc1);font-weight:900;
+  background:linear-gradient(transparent 60%,rgba(215,112,53,.2) 60%);}
+.scheme__figure{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;
+  background:#fff;border-radius:14px;padding:24px;margin-top:8px;}
+.scheme__fig-col{text-align:center;}
+.scheme__fig-col .cap{font-size:13px;font-weight:900;color:var(--navy);opacity:.7;margin-bottom:6px;}
+.scheme__fig-col .val{font-size:30px;font-weight:900;color:var(--navy);}
+.scheme__fig-col.is-before .val{color:#888;text-decoration:line-through;}
+.scheme__fig-col.is-after .val{color:var(--acc1);}
+.scheme__arrow{font-size:32px;color:var(--blue2);font-weight:900;}
+
+/* --- タイムライン（期限） --- */
+.timeline{margin-top:36px;}
+.timeline__title{font-size:18px;font-weight:900;text-align:center;margin-bottom:20px;}
+.timeline__row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative;}
+.timeline__step{background:#fff;border:2px solid var(--gray-line);border-radius:12px;padding:18px 14px;text-align:center;}
+.timeline__step.is-deadline{border-color:var(--acc1);background:#fff7f2;}
+.timeline__step .t{font-size:13px;font-weight:900;color:var(--blue2);margin-bottom:6px;}
+.timeline__step.is-deadline .t{color:var(--acc1);}
+.timeline__step .d{font-size:14px;font-weight:700;line-height:1.6;}
+
+/* --- 対象者チェックリスト --- */
+.checklist{padding:80px 22px;background:var(--gray-bg);}
+.checklist__inner{max-width:820px;margin:0 auto;}
+.checklist__box{background:#fff;border-radius:18px;padding:34px 34px;box-shadow:var(--shadow);}
+.checklist__box ul{list-style:none;display:grid;gap:16px;}
+.checklist__box li{position:relative;padding-left:44px;font-size:16px;font-weight:700;line-height:1.6;}
+.checklist__box li::before{content:"✓";position:absolute;left:0;top:-2px;width:28px;height:28px;border-radius:8px;
+  background:linear-gradient(120deg,var(--blue1),var(--blue2));color:#fff;font-size:16px;font-weight:900;
+  display:grid;place-items:center;}
+.checklist__note{margin-top:24px;font-size:14px;font-weight:700;text-align:center;}
+.checklist__note em{color:var(--acc1);}
+
+/* --- 物件種別グリッド（B6 訳あり） --- */
+.types{padding:88px 22px;}
+.types__inner{max-width:var(--wrap);margin:0 auto;}
+.types__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.type-card{background:#fff;border:2px solid var(--gray-line);border-radius:14px;padding:26px 22px;text-align:center;transition:transform .2s,border-color .2s;}
+.type-card:hover{transform:translateY(-4px);border-color:var(--blue-lt1);}
+.type-card__icon{width:60px;height:60px;margin:0 auto 14px;border-radius:50%;
+  background:linear-gradient(120deg,var(--blue1),var(--blue2));display:grid;place-items:center;color:#fff;}
+.type-card__icon svg{width:32px;height:32px;}
+.type-card h3{font-size:18px;font-weight:900;margin-bottom:8px;}
+.type-card p{font-size:13px;font-weight:500;line-height:1.7;opacity:.85;}
+.types__more{text-align:center;margin-top:28px;font-size:16px;font-weight:900;color:var(--navy);}
+.types__more em{color:var(--acc1);}
+
+/* --- 注意書き（免責） --- */
+.lp-note{max-width:820px;margin:0 auto;padding:0 22px 60px;}
+.lp-note p{font-size:12px;font-weight:500;line-height:1.9;color:var(--navy);opacity:.6;
+  background:var(--gray-bg);border-radius:10px;padding:18px 20px;}
+
+/* --- レスポンシブ --- */
+@media (max-width:900px){
+  .lp-hero__inner{grid-template-columns:1fr;gap:30px;}
+  .lp-hero__title{font-size:30px;}
+  .scheme__box{padding:28px 20px;}
+  .timeline__row{grid-template-columns:1fr;}
+  .types__grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:600px){
+  .lp-header{height:60px;}
+  .lp-header__tel{display:none;}
+  .lp-ribbon{margin-top:60px;font-size:13px;}
+  .lp-hero{padding:40px 16px 46px;}
+  .lp-hero__title{font-size:25px;line-height:1.5;}
+  .lp-hero__sub{font-size:15px;}
+  .scheme,.checklist,.types{padding:56px 16px;}
+  .scheme__figure{gap:10px;padding:18px;}
+  .scheme__fig-col .val{font-size:22px;}
+  .scheme__arrow{font-size:22px;}
+  .types__grid{grid-template-columns:1fr;}
+}
