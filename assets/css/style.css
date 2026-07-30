@@ -1,5 +1,5 @@
-/* =========================================================
-   AKIYA PARTNERS — 空き家買取LP（AlbaLink 模写ベース）
+﻿/* =========================================================
+   ウチなら不動産 — 空き家買取LP（AlbaLink 模写ベース）
    配色: navy #1F3A7A / blue grad #0061B3→#0089D0 / accent #B73157→#D77035
    ========================================================= */
 
@@ -353,10 +353,11 @@ body.nav-open .nav-backdrop{opacity:1;visibility:visible;}
 .contact__actions{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px;}
 .contact-btn{border-radius:14px;padding:22px;transition:transform .2s;}
 .contact-btn:hover{transform:translateY(-3px);}
-.contact-btn--tel{background:#fff;color:var(--navy);}
-.contact-btn--tel small{display:block;font-size:13px;font-weight:700;opacity:.7;}
-.contact-btn--tel b{display:block;font-size:30px;font-weight:900;letter-spacing:.02em;line-height:1.3;}
-.contact-btn--tel span{font-size:12px;font-weight:700;opacity:.7;}
+/* ボタン内に電話番号は表示しない（発信は href の tel: で行う）。
+   フォームボタンと同じ組み方に揃えて高さと文字サイズを一致させる */
+.contact-btn--tel{background:#fff;color:var(--navy);display:flex;flex-direction:column;justify-content:center;}
+.contact-btn--tel b{display:block;font-size:22px;font-weight:900;letter-spacing:.02em;line-height:1.4;}
+.contact-btn--tel span{font-size:12px;font-weight:700;opacity:.7;margin-top:6px;}
 .contact-btn--form{background:linear-gradient(100deg,var(--acc1),var(--acc2));display:flex;flex-direction:column;justify-content:center;}
 .contact-btn--form b{font-size:22px;font-weight:900;}
 .contact-btn--form span{font-size:12px;font-weight:700;margin-top:6px;opacity:.95;}

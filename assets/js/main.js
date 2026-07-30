@@ -1,4 +1,4 @@
-/* AKIYA PARTNERS — 空き家買取LP */
+﻿/* ウチなら不動産 — 空き家買取LP */
 (function () {
   'use strict';
 
